@@ -1,0 +1,141 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::after, * ::before {
+  box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 20px 10px;
+    font-family: "Inter", Arial, Helvetica;
+}
+a{
+    text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_items{
+    display: none;
+}
+.main_article{
+    max-width: 100%;
+
+}
+.main_article > img {
+    width: 100%;
+}
+.main_article > h1 {
+    font-size: 48px;
+}
+.main_article > p {
+    margin-bottom: 28px;
+}
+.btn_redmore { 
+    background-color: brown;
+    padding: 15px 20px;
+    color: aliceblue;
+    display: block;
+    width: 200px;
+    margin-top: 10px ;
+    margin-bottom: 60px;
+}
+.secundary_articles{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 10px 20px;
+}
+.secundary_articles_title{
+    color: hsl(35, 77%, 62%);
+}
+.secundary_article{
+    margin: 20px o;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+.secundary_article:last-child{
+    border: none;
+}
+/*Modo Escritorio*/
+@media screen and (min-width:1240px) 
+    {
+    .menu > img {
+        display: none;
+    }
+    .menu_items{
+        display: inline;
+    }
+    .menu_items{
+        margin-right: 10px;
+        padding: 20px;
+        color: hsl(236, 13%, 42%);
+    }
+    .menu_items > a:hover{
+       color: aqua; 
+    }
+    .wrap_hero{
+        display: flex;
+        gap:50px
+    }
+    .main_article{
+        margin: 0px;
+    }
+    .main_article_contenet{ /*Falta clase*/
+        display: flex;
+    }
+    .main_article >img{
+        content: url('../assets/images/image-web-3-mobile.jpg');
+    }
+    .wrap_list{ /*falta la clase*/
+        counter-reset: 1;
+    }
+    .secundary_articles_title{
+        font-size: 40px;
+    }
+    .secundary_article{
+        margin-top: 40px;
+    }
+    .secundary_article > h3{
+        margin: 10px 0;
+    }
+    .secundary_article > p{
+        line-height: 40px;
+    }
+    
+}
+/*Modo Escritorio*/
+.div_article {
+    display: flex; /* Usar flexbox para alinear la imagen y el contenido */
+    margin-bottom: 20px; /* Espacio entre cada artículo */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.div_article img {
+    margin-right: 10px; /* Espacio entre la imagen y el contenido */
+    width: 150px; /* Ancho de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+   
+}
+.article-content {
+display: inline-block; /* Hacer que el contenido esté en línea */
+vertical-align:  top; /* Alinear el contenido en la parte superior de la imagen */
+}
+.article-content h2 {
+    color: #cacaca;
+}
+.article-content h3 {
+    margin: 0; /* Eliminar el margen superior del encabezado */
+}
+
+.article-content p {
+    margin: 0; /* Eliminar el margen superior del párrafo */
+    color: hsl(236, 13%, 42%);
+}
+
+
+
+
